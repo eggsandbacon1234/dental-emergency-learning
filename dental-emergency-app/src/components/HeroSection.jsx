@@ -5,9 +5,9 @@ function HeroSection() {
       <div className="max-w-2xl px-10 md:px-20">
 
         <h1 className="text-5xl md:text-7xl font-bold leading-tight text-white">
-          Welcome back,
+          Welcome Back,
           <br />
-          future clinician
+          Future Clinician
         </h1>
 
         <p className="mt-6 text-lg md:text-xl text-white/90">
