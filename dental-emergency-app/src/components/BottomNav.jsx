@@ -2,34 +2,33 @@ import { House, TriangleAlert } from "lucide-react";
 
 function BottomNav() {
   return (
-    <div className="absolute bottom-0 left-0 z-20 w-full">
-
+    <footer
+      className="
+      bg-white
+      border-t
+      border-slate-200
+      "
+    >
       <div
         className="
-        mx-auto
         flex
         justify-around
-        border-t
-        border-white/20
-        bg-black/30
         py-4
-        backdrop-blur-md
         "
       >
 
-        <button className="flex items-center gap-2 text-white">
+        <button className="flex items-center gap-2 text-slate-700">
           <House size={20} />
           Home
         </button>
 
-        <button className="flex items-center gap-2 text-white">
+        <button className="flex items-center gap-2 text-slate-700">
           <TriangleAlert size={20} />
           Emergencies
         </button>
 
       </div>
-
-    </div>
+    </footer>
   );
 }
 
