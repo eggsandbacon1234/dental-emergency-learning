@@ -1,42 +1,46 @@
 import Navbar from "../components/Navbar";
-import HeroSection from "../components/HeroSection";
-import BottomNav from "../components/BottomNav";
+import VideoContainer from "../components/VideoContainer";
+import EmergencyButton from "../components/EmergencyButton";
 
 function Home() {
   return (
-    <div className="relative h-screen overflow-hidden">
-
-      {/* Video Background */}
-
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="
-          absolute
-          inset-0
-          h-full
-          w-full
-          object-cover
-        "
-      >
-        <source
-          src="/videos/homepage-bg.mp4"
-          type="video/mp4"
-        />
-      </video>
-
-      {/* Overlay */}
-
-      <div className="absolute inset-0 bg-black/50"></div>
-
+    <div
+      className="
+      min-h-screen
+      bg-gradient-to-br from-slate-100 to-blue-50
+      flex
+      flex-col
+      "
+    >
       <Navbar />
 
-      <HeroSection />
+      <main
+        className="
+        flex-1
+        flex
+        flex-col
+        items-center
+        justify-center
+        px-6
+        "
+      >
+        <VideoContainer />
 
-      <BottomNav />
+        <div className="mt-6 flex items-center gap-8">
+          <EmergencyButton />
 
+          <div className="max-w-xs">
+            <p className="text-xs text-slate-500">
+              <strong>Disclaimer:</strong>
+              <br />
+              This guide is intended for educational and quick reference
+              purposes only and does not replace professional clinical
+              judgement.
+            </p>
+          </div>
+        </div>
+
+      </main>
     </div>
   );
 }
