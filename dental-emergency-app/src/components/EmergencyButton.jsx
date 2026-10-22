@@ -1,6 +1,11 @@
+import { useNavigate } from "react-router-dom";
 function EmergencyButton() {
+
+  const navigate = useNavigate();
+
   return (
     <button
+      onClick={() => navigate("/emergencies")}
       className="
       rounded-full
       border-4

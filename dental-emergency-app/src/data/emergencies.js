@@ -1,31 +1,42 @@
 export const emergencies = [
   {
+    id: "vasovagal-syncope",
+    title: "Vasovagal Syncope",
+    image: "/images/vasovagal.jpg",
+  },
+  {
+    id: "hypoglycemia",
+    title: "Hypoglycemia",
+    image: "/images/hypoglycemia.jpg",
+  },
+  {
+    id: "asthma-attack",
+    title: "Asthma Attacks",
+    image: "/images/asthma.jpg",
+  },
+  {
     id: "anaphylaxis",
     title: "Anaphylaxis",
-    symptoms: [
-      "Difficulty breathing",
-      "Swelling",
-      "Rash"
-    ],
-    steps: [
-      "Stop treatment",
-      "Administer epinephrine",
-      "Call emergency services"
-    ],
-    video: "/videos/anaphylaxis.mp4"
+    image: "/images/anaphylaxis.jpg",
   },
-
   {
-    id: "syncope",
-    title: "Syncope",
-    symptoms: [
-      "Dizziness",
-      "Pale skin"
-    ],
-    steps: [
-      "Place patient supine",
-      "Elevate legs"
-    ],
-    video: "/videos/syncope.mp4"
-  }
+    id: "cardiac-arrest",
+    title: "Cardiac Arrest",
+    image: "/images/cardiac.jpg",
+  },
+  {
+    id: "epilepsy",
+    title: "Epilepsy",
+    image: "/images/epilepsy.jpg",
+  },
+  {
+    id: "placeholder",
+    title: "Coming Soon",
+    image: "/images/placeholder.jpg",
+  },
+  {
+    id: "others",
+    title: "Others",
+    image: "/images/others.jpg",
+  },
 ];
